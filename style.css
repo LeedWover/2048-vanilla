@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+body {
+  color: #fff;
+  background-color: rgb(55, 72, 104);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-container {
+  padding: 10px;
+}
+
+.score-title, #score {
+  font-size: 3rem;
+}
+
+#result {
+  font-size: 6rem;
+  color: red;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(122, 114, 94);
+  border-radius: 9px;
+}
+
+.grid div {
+  width: 150px;
+  height: 150px;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border: solid 5px rgb(122, 114, 94);
+  border-radius: 9px;
+}
+
+
+.grid div[class^="2"] {
+  background-color: rgb(255, 183, 0);
+}
+
+.grid div[class^="4"] {
+  background-color: rgb(218, 156, 0);
+}
+
+.grid div[class^="8"] {
+  background-color: rgb(163, 117, 0);
+}
+
+.grid div[class^="16"] {
+  background-color: rgb(255, 90, 90);
+}
+
+.grid div[class^="32"] {
+  background-color: rgb(252, 55, 55);
+}
+
+.grid div[class^="64"] {
+  background-color: rgb(255, 1, 1);
+}
+
+.grid div[class^="128"] {
+  background-color: rgb(167, 105, 192);
+}
+
+.grid div[class^="256"] {
+  background-color: rgb(156, 52, 197);
+}
+
+.grid div[class^="512"] {
+  background-color: rgb(131, 42, 167);
+}
+
+.grid div[class^="1024"] {
+  background-color: rgb(143, 91, 23);
+}
+
+.grid div[class^="2048"] {
+  background-color: rgb(63, 37, 2);
+}
